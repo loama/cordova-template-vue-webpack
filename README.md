@@ -21,16 +21,14 @@
 
 ![template logo](logo_v2.png "template logo")
 
-# Framework7 - Vue - Webpack Cordova Template
+# Vue - Webpack Cordova Template
 You can start your new cordova project perfectly with this template.
 
 This template uses:
-* [Framework7 5](https://framework7.io)
 * [Vue 2](https://vuejs.org/)
 * [Vuex](https://github.com/vuejs/vuex)
 * [Webpack 4](https://webpack.github.io/)
 * [Cordova](https://cordova.apache.org/)
-* [FontAwesome 5](http://fontawesome.io/)
 * [Babel Loader 7](https://github.com/babel/babel-loader)
 
 
@@ -72,7 +70,8 @@ This template need cordova or phonegap, for more information [cordova installati
 Our Magic words:
 
 ``` bash
-cordova create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-framework7-vue-webpack
+cordova create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vue-webpack
+
 phonegap create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-framework7-vue-webpack
 ```
 
@@ -82,34 +81,8 @@ boom! :boom: you have your brand new cordova / phonegap project with framework7 
 
 ## Installation using pre-defined templates
 
-Framework v5 version
-
 ``` bash
-cordova create cordova-template com.template DefaultTemplate --template git://github.com/caiobiodere/cordova-template-framework7-vue-webpack.git#master
-```
-
-[Framework Single View v5 version](https://github.com/framework7io/framework7-template-single-view)
-
-``` bash
-Still under development
-```
-
-[Framework Tabbed Views v5 version](https://github.com/framework7io/framework7-template-tabs)
-
-``` bash
-Still under development
-```
-
-[Framework Split View v5 version](https://github.com/framework7io/framework7-template-split-view)
-
-``` bash
-Still under development
-```
-
-Framework v3 version
-
-``` bash
-cordova create cordova-template com.template DefaultTemplate --template git://github.com/caiobiodere/cordova-template-framework7-vue-webpack.git#feature/v3-default-template
+cordova create cordova-template com.example.hello HelloWorld --template git://github.com/loama/cordova-template-vue-webpack.git#master
 ```
 
 ---
