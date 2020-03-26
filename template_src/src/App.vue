@@ -1,15 +1,15 @@
 <template>
   <div id="app">
     {{ message }}
-    <span class="">hola abcd</span>
+    <span class="">hola abcde</span>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      message: 'Hello World',
+      message: 'Hello World'
     }
   }
 }
