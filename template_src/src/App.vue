@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    {{ message }}
+    {{ message }} {{example}}
     <span class="">hola abcde</span>
   </div>
 </template>
 
 <script>
 export default {
+  computed: {
+    example () {
+      return this.$store.state.example
+    }
+  },
   data () {
     return {
       message: 'Hello World'
