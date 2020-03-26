@@ -18,12 +18,12 @@ export default {
     }
   },
   methods: {
-    deviceready () {
-      alert('deviceready')
+    onDeviceready: () => {
+      console.log('deviceready')
     }
   },
   mounted () {
-    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false)
+    document.addEventListener('deviceready', this.onDeviceready())
   }
 }
 </script>

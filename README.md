@@ -1,23 +1,27 @@
 ![template logo](logo_v2.png "template logo")
 
 # Vue - Webpack Cordova Template
+A template for creating
+
+Inspired and forked from [caiobiodere template](https://github.com/caiobiodere/cordova-template-framework7-vue-webpack)
 
 This template uses:
 * [Vue 2](https://vuejs.org/)
 * [Vuex](https://github.com/vuejs/vuex)
 * [Webpack 4](https://webpack.github.io/)
 * [Cordova](https://cordova.apache.org/)
-* [Babel Loader 7](https://github.com/babel/babel-loader)
+* [Babel Loader](https://github.com/babel/babel-loader)
+
+Features:
+* Hot Reload in browser
+* Lint on save
+* Lightweight (~)
+* Code minification
 
 ## Create project
 
-``` bash
-cordova create cordova-template com.example.hello HelloWorld --template git://github.com/loama/cordova-template-vue-webpack.git#master
 ```
-
-## Add the platforms needed
-``` bash
-cordova platform add browser ios android
+cordova create cordova-template com.example.hello HelloWorld --template git://github.com/loama/cordova-template-vue-webpack.git#master
 ```
 
 ## Install dependencies
@@ -25,10 +29,15 @@ cordova platform add browser ios android
 npm install
 ```
 
+## Add the platforms needed
+``` bash
+cordova platform add browser ios android
+```
+
 ## Usage
 
 You can use every cordova | phonegap commands.
-You just have one more command option: `-- --lr`. It starts live reload.
+You just have one more command option: `-- --livereload`. It starts live reload.
 
 Example usage:
 ```
