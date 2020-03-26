@@ -41,8 +41,6 @@ This template uses:
 For live-reload i can't find easy way to do fixed version of this. But you can develop your app with this way:
 
 1. `cordova platform add ios browser` (browser needs for development in live-reload mode.)
-2. `cordova run ios -- --lr` (wait till app opens in your ios emulator or phone. it will close console output after publish, so live-reload will not work. don't close the app and go to next step.)
-3. `cordova run browser -- --lr` (you can use live-reload in your phone-emulator and browser at same time. you can edit your files in live-reload mode now.)
 
 ---
 
@@ -67,18 +65,6 @@ Hooks are smart. They can fix some problems for you. Fix list:
 
 This template need cordova or phonegap, for more information [cordova installation](https://cordova.apache.org/docs/en/latest/guide/cli/) or [phonegap installation](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/).
 
-Our Magic words:
-
-``` bash
-cordova create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-vue-webpack
-
-phonegap create <project_create_dir> [com.example.projectname] [ProjectClassName] --template cordova-template-framework7-vue-webpack
-```
-
-boom! :boom: you have your brand new cordova / phonegap project with framework7 - vue 2 and webpack 4!
-
-![such a wow!](https://cloud.githubusercontent.com/assets/296796/3511506/4042665c-06b0-11e4-953c-4f14c11f81ec.png "such a wow!")
-
 ## Installation using pre-defined templates
 
 ``` bash
@@ -94,24 +80,7 @@ You just have one more command option: `-- --lr`. It starts live reload.
 
 Example usage:
 ```
-cordova run android -- --lr
-cordova run browser -- --live-reload
-phonegap run ios -- --lr
+cordova run android -- --livereload
+cordova run browser -- --livereload
 ```
-
-And :tada: that's all folks!
-
 ---
-
-## Using Cordova-Simulate from microsoft
-
-We can use Microsoft Cordova-Simulate using:
-* [Cordova-Simulate Plugin](https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools)
-
-You can check:
-* [hookers.js](template_src/hooks/hookers.js),
-* [beforedep.js](template_src/hooks/beforedep.js),
-* [CordovaDeviceRouter.js](template_src/webpack/dev_helpers/CordovaDeviceRouter.js),
-* [device_router.html](template_src/webpack/dev_helpers/device_router.html)
-
-for more information.
