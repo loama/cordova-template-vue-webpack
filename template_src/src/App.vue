@@ -16,6 +16,14 @@ export default {
     return {
       message: 'Hello World'
     }
+  },
+  methods: {
+    deviceready () {
+      alert('deviceready')
+    }
+  },
+  mounted () {
+    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false)
   }
 }
 </script>
